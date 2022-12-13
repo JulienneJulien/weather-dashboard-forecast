@@ -30,7 +30,7 @@ li {
     background-color: var(--beige);
     padding: 20px;
     text-align: center;
-    background-image: url("../assets/images/Weather\ hero\ banner.jpg");
+    background-image: url("../images/Weather\ hero\ banner.jpg");
     background-size: stretch;
     background-position: center;
     background-repeat: no-repeat;
