@@ -1,12 +1,8 @@
 /* CSS variables were created at the root of the document to be used throughout the style sheet */ 
 :root {
-    --seagreen: darkslategrey;
+    --seagreen: rgb(42, 88, 88);
     --lightgray: lightgray;
-    --purple: darkslateblue;
-    --transparentpurple: rgba(24, 4, 41, 0.295);
-    --goldyellow: rgba(255, 255, 0, 0.651);
     --beige: rgba(197, 204, 167, 0.877);
-    --transwhite: rgba(255, 255, 255, 0.158);
     --regblack:black;
 }
 /* UNIVERSAL STYLE ADDED */
@@ -15,6 +11,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     box-sizing: border-box;
+    overflow: hidden;
 }
 /* GENERAL STYLE ADDED */
 body {
@@ -22,13 +19,10 @@ body {
     margin: 0;
 }
 
-li {
-    list-style: none;
-}
-
 .mainheader {
     background-color: var(--beige);
-    padding: 20px;
+    border-bottom: 2px solid var(--regblack);
+    padding: 40px;
     text-align: center;
     background-image: url("../images/Weather\ hero\ banner.jpg");
     background-size: stretch;
@@ -36,8 +30,58 @@ li {
     background-repeat: no-repeat;
 }
 
-.mainheader h1 {
-    font-size: 50px;
+.mainheader h1, h2 {
+    font-size: 40px;
     color: var(--regblack);
     opacity: 50%;
   }
+/* MAIN SECTION STYLES ADDED */
+  .containerbox {
+    border: 2px solid var(--seagreen);
+    margin: 0 1.5rem;
+  }
+  .row {
+    background-color: var(--seagreen);
+    margin:0.5rem 0.5rem;
+    text-align: center;
+  }
+
+  .form-inline {
+    padding-right: 0px;
+  }
+
+  button {
+    margin:0.5rem 0.5rem;
+  }
+
+  #cityViewed {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #todayWeather {
+    margin-top: 20px;
+    margin-left: 1px;
+    line-break: normal;
+  }
+
+  p {
+    font-weight: 500;
+    text-align: center;
+  }
+
+  #temperature,
+  #humid,
+  #wind,
+  #uv {
+    text-align: left;
+  }
+
+  #forecast {
+    margin-top: 20px;
+  }
+
+.card {
+  background-color: var(--seagreen);
+  border: none;
+}

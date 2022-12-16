@@ -9,7 +9,7 @@
 
 ## Link To Deployed Project/Application
 
-
 ## Visuals
+<img src="./assets/images/screencapture-weather.png">
  
  
